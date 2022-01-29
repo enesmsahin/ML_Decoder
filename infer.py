@@ -83,7 +83,7 @@ def main():
     plt.imshow(im)
     plt.axis('off')
     plt.axis('tight')
-    # plt.rcParams["axes.titlesize"] = 10
+    plt.rcParams["axes.titlesize"] = 10
     plt.title("detected classes: {}".format(detected_classes))
 
     plt.show()
