@@ -53,6 +53,6 @@ def create_model(args,load_head=False):
                              (k in model.state_dict() and 'head.fc' not in k)}
             model.load_state_dict(filtered_dict, strict=False)
         else:
-            model.load_state_dict(state[key], strict=True)
+            model.load_state_dict(state['model'], strict=True)
 
     return model
